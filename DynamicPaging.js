@@ -105,14 +105,14 @@ app.controller('myCtrl', [
         };
 
         $scope.prevPage = function () {
-
+            $scope.resetAll();
             if ($scope.currentPage > 0) {
                 $scope.currentPage--;
             }
         };
 
         $scope.nextPage = function () {
-
+            $scope.resetAll();
             if ($scope.currentPage < $scope.pagedItems.length - 1) {
                 $scope.currentPage++;
             }
@@ -120,6 +120,7 @@ app.controller('myCtrl', [
 
         $scope.setPage = function (n) {
 
+            $scope.resetAll();
             $scope.currentPage = n;
         };
 
