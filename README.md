@@ -1,2 +1,2 @@
 # DynamicTablePaging
-A table with dynamic data using AngularJS and bootstrap
+Paging and sortig reversely for a table with dynamic data by using AngularJS and bootstrap
