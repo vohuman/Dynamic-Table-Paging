@@ -57,17 +57,17 @@
                         <div class="pagination pull-left">
                             <ul class="pagination">
                                 <li ng-class="{disabled: currentPage == 0}">
-                                    <a href="" ng-click="prevPage()">Prev »</a>
+                                    <a href="" ng-click="prevPage()" class="btn">Prev »</a>
                                 </li>
 
                                 <li ng-repeat="n in range(pagedItems.length, currentPage, currentPage + pagesAmount) "
                                     ng-class="{active: n == currentPage}"
                                     ng-click="setPage(n)">
-                                    <a href="" ng-bind="n + 1">{{n+1}}</a>
+                                    <a href="" ng-bind="n + 1" class="btn">{{n+1}}</a>
                                 </li>
 
                                 <li ng-class="{disabled: pagedItems[currentPage].length < itemsPerPage}">
-                                    <a href="" ng-click="nextPage()">« Next</a>
+                                    <a href="" ng-click="nextPage()" class="btn">« Next</a>
                                 </li>
                             </ul>
                         </div>
